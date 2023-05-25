@@ -12,11 +12,13 @@ Let’s say we have a plant that we need to water once a week on Wednesdays. We 
 */
 
 //your code goes here
-
-
-
-
-
+const plantNeedsWater = function(day){
+  if(day === 'Wednesday')
+  return true
+}else{
+  return false;
+}
+ console.log(plantNeedsWater(('Tuesday')));
 
 
 
@@ -36,8 +38,8 @@ Notice that we’ve already converted the if/else statement to a ternary operato
 */
 
 
-const plantNeedsWater = (day) => {
-  return day === 'Wednesday' ? true : false;
-};
+//const oddOreven(num) => {
+  return num % 2 === 0 ? 'even' : 'odd';
 
-
+const oddOreven = num => num % 2 === 0 ? 'even' : 'odd';
+console.log(oddOrEven(16));
